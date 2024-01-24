@@ -170,6 +170,75 @@ Any changes made there will be applied to the Server on next boot.
 
 Please keep in mind that the ENV variables will always overwrite the changes made to `PalWorldSettings.ini`.
 
+### List of Settings
+
+| Attribute | Default | Notes |
+|-|-|-|
+| Difficulty | None | |
+| DayTimeSpeedRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| NightTimeSpeedRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| ExpRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PalCaptureRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PalSpawnNumRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PalDamageRateAttack | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PalDamageRateDefense | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PlayerDamageRateAttack | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PlayerDamageRateDefense | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PlayerStomachDecreaceRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PlayerStaminaDecreaceRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PlayerAutoHPRegeneRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PlayerAutoHpRegeneRateInSleep | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PalStomachDecreaceRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PalStaminaDecreaceRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PalAutoHPRegeneRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| PalAutoHpRegeneRateInSleep | 1.000000 | <b>multiplier</b><br>higher means faster |
+| BuildObjectDamageRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| BuildObjectDeteriorationDamageRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| CollectionDropRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| CollectionObjectHpRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| CollectionObjectRespawnSpeedRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| EnemyDropItemRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| DeathPenalty | All | Can be <ol start="0"><li>None</li><li>Item</li><li>ItemAndEquipment</li><li>All</li></ol> <i>number or name should work</i> |
+| bEnablePlayerToPlayerDamage | False | Doesn't seem to do anything on its own, might need bIsPvP set to true (not tested) |
+| bEnableFriendlyFire | False | |
+| bEnableInvaderEnemy | True | |
+| bActiveUNKO | False | |
+| bEnableAimAssistPad | True | |
+| bEnableAimAssistKeyboard | False | |
+| DropItemMaxNum | 3000 | Max amount of items that can be on the ground |
+| DropItemMaxNum_UNKO | 100 | ??? |
+| BaseCampMaxNum | 128 | Max amount of camps that can be created on the server |
+| BaseCampWorkerMaxNum | 15 | |
+| DropItemAliveMaxHours | 1.000000 | |
+| bAutoResetGuildNoOnlinePlayers | False | |
+| AutoResetGuildTimeNoOnlinePlayers | 72.000000 | |
+| GuildPlayerMaxNum | 20 | |
+| PalEggDefaultHatchingTime | 72.000000 | number of hours an egg needs to hatch |
+| WorkSpeedRate | 1.000000 | <b>multiplier</b><br>higher means faster |
+| bIsMultiplay | False | |
+| bIsPvP | False | |
+| bCanPickupOtherGuildDeathPenaltyDrop | False | |
+| bEnableNonLoginPenalty | True | |
+| bEnableFastTravel | True | |
+| bIsStartLocationSelectByMap | True | |
+| bExistPlayerAfterLogout | False | |
+| bEnableDefenseOtherGuildPlayer | False | |
+| CoopPlayerMaxNum | 4 | |
+| ServerPlayerMaxNum | 32 | |
+| ServerName | "Default Palworld Server" | |
+| ServerDescription | "" | |
+| AdminPassword | "" | |
+| ServerPassword | "" | |
+| PublicPort | 8211 | |
+| PublicIP | "" | |
+| RCONEnabled | False | |
+| RCONPort | 25575 | |
+| Region | "" | |
+| bUseAuth | True | |
+| BanListURL | "https://api.palworldgame.com/api/banlist.txt" | |
+
+For a more detailed list of settings go to: [shockbyte](https://shockbyte.com/billing/knowledgebase/1189/How-to-Configure-your-Palworld-server.html)
+
 > [!TIP]
 > If the `<mount_folder>/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini` is empty,
 > delete the file and restart the server, a new file with content will be created.
