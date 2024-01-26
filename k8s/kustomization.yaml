@@ -1,0 +1,10 @@
+namePrefix: test-
+
+namespace: palworld-test
+
+resources:
+  - configmap.yaml
+  - secret.yaml
+  - pvc.yaml
+  - deployment.yaml
+  - service.yaml

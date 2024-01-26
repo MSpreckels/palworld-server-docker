@@ -81,7 +81,7 @@ data:
     ServerPassword="",
     PublicPort=8211,
     PublicIP="",
-    RCONEnabled=False,
+    RCONEnabled=True,
     RCONPort=25575,
     Region="",
     bUseAuth=True,

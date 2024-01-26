@@ -14,10 +14,12 @@ spec:
       labels:
         app: palworld-server
     spec:
+      imagePullSecrets:
+        - name: github-pullsecret
       containers:
         - name: palworld-server
-          image: thijsvanloef/palworld-server-docker
-          imagePullPolicy: IfNotPresent
+          image: ghcr.io/mspreckels/palworld-docker-server:test
+          imagePullPolicy: Always
           ports:
             - containerPort: 8211
               name: server
@@ -37,13 +39,13 @@ spec:
           volumeMounts:
             - mountPath: /palworld
               name: datadir
-            - name: palworld-settings
-              mountPath: /palworld/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
-              subPath: PalWorldSettings.ini
+#            - name: palworld-settings
+#              mountPath: /palworld/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
+#              subPath: PalWorldSettings.ini
       volumes:
       - name: datadir
         persistentVolumeClaim:
           claimName: palworld-server-datadir
-      - name: palworld-settings
-        configMap:
-          name: palworld-settings
+#      - name: palworld-settings
+#        configMap:
+#          name: palworld-settings

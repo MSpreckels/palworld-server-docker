@@ -1,5 +1,6 @@
 FROM cm2network/steamcmd:root
 LABEL maintainer="thijs@loef.dev"
+LABEL org.opencontainers.image.source=https://github.com/mspreckels/palworld-docker-server
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     xdg-user-dirs=0.17-2 \
